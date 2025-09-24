@@ -23,8 +23,8 @@ steps:
       gke-gcloud-auth-plugin --version
       export USE_GKE_GCLOUD_AUTH_PLUGIN=True
       gcloud container clusters get-credentials "cluster-1" --project "zippy-tiger-473114-k3" --zone "us-central1"
-      kubectl apply -f deployment.yaml
-      kubectl apply -f service.yaml
+      kubectl create -f deployment.yaml
+      kubectl create -f service.yaml
 
 options:
   logging: CLOUD_LOGGING_ONLY
