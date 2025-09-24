@@ -25,6 +25,7 @@ steps:
       gcloud container clusters get-credentials "cluster-1" --project "zippy-tiger-473114-k3" --zone "us-central1"
       kubectl create -f deployment.yaml
       kubectl create -f service.yaml
+      kubectl rollout restart deployment flask-app
 
 options:
   logging: CLOUD_LOGGING_ONLY
