@@ -5,8 +5,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Flask from Google kubernetes clusters!!"
-    ## return "Hello Team Samsung"
+    ## return "Flask from Google kubernetes clusters!!"
+    return "Hello Team Samsung"
 
 
 if __name__ == "__main__":
